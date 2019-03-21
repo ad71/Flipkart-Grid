@@ -27,4 +27,4 @@ def mIOU(y, y_hat):
                          tf.maximum(tf.cast(0.0, tensor_type), iy2 - iy1))
     u_area = y_hat_area + y_area - i_area
     iou = i_area / u_area
-return tf.reduce_mean(iou)
+    return tf.reduce_mean(iou)
