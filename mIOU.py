@@ -1,6 +1,11 @@
 import tensorflow as tf
 
 def mIOU(y, y_hat):
+    '''
+    from mIOU import mIOU
+    
+    model.compile(..., metrics=[mIOU])
+    '''
     x1_hat = y_hat[:, 0]
     x2_hat = y_hat[:, 1]
     y1_hat = y_hat[:, 2]
